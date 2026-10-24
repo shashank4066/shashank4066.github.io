@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shashankdev.tech/sitemap.xml
