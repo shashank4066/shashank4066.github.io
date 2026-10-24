@@ -1,6 +1,6 @@
 # Shashank — Java, Cloud & Applied AI
 
-A responsive portfolio featuring TCS experience, six selected projects, engineering case studies, searchable skills, AI-assisted development, Microsoft AI-200 and AZ-900 certifications, education, and a résumé request link.
+A responsive portfolio featuring TCS experience, three selected projects, engineering case studies, searchable skills, AI-assisted development, Microsoft AI-200 and AZ-900 certifications, education, and a résumé request link.
 
 Intended custom domain: https://shashankdev.tech/
 GitHub Pages origin: https://shashank4066.github.io/
