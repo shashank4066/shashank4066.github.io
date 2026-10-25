@@ -1,0 +1,32 @@
+name: Portfolio quality
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-quality
+  cancel-in-progress: true
+jobs:
+  lighthouse:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Audit public HTTPS website on mobile
+        run: |
+          mkdir -p reports
+          npx --yes lighthouse@13.5.0 https://shashankdev.tech/ --only-categories=performance,accessibility,best-practices,seo --output=json --output=html --output-path=reports/mobile --chrome-flags="--headless --no-sandbox" --quiet
+      - name: Enforce performance and accessibility budgets
+        run: node scripts/check-lighthouse.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mobile-lighthouse-report
+          path: reports/

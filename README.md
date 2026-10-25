@@ -1,14 +1,33 @@
-# Shashank — Java, Cloud & Applied AI
+# Shashank — Java Backend Developer
 
-A responsive portfolio featuring TCS experience, three selected projects, engineering case studies, searchable skills, AI-assisted development, Microsoft AI-200 and AZ-900 certifications, education, and a résumé request link.
+Public portfolio at **https://shashankdev.tech/**, hosted with GitHub Pages.
 
-Intended custom domain: https://shashankdev.tech/
-GitHub Pages origin: https://shashank4066.github.io/
+[![Portfolio quality](https://github.com/shashank4066/shashank4066.github.io/actions/workflows/quality.yml/badge.svg)](https://github.com/shashank4066/shashank4066.github.io/actions/workflows/quality.yml)
 
-## Hosting
-Publish the main branch and root folder in Settings → Pages. The .nojekyll file disables Jekyll processing. Set the custom domain in Pages settings after initial deployment.
+## Focus
+Java, Spring Boot, banking APIs and reliable backend systems. IncidentIQ is the flagship; FrameForge is a supporting durable-workflow case study.
 
-## Edit
-No build step or API key is required. Edit index.html, styles.css, script.js, and assets/. Contact links open the visitor's email application.
+## Run locally
+Serve this directory with any static HTTP server, for example:
+```sh
+python -m http.server 8088
+```
+Open http://localhost:8088/. No build step or third-party font service is required.
 
-Content is grounded in the supplied résumé and public project documentation. Illustrations contain synthetic data. No employer/client source code is included.
+## Structure
+- `index.html`: semantic, usable without JavaScript
+- `styles.css`: responsive layout, visible focus states and reduced-motion support
+- `script.js`: optional media control enhancement
+- `assets/Shashank-Resume.pdf`: direct public résumé
+- `assets/social-card.png`: 1200 × 630 Open Graph card
+- `CNAME`: custom domain; preserve during changes
+
+## Quality
+The Portfolio quality workflow runs mobile Lighthouse against the public HTTPS URL after Pages deployment and can be run manually. It uploads the complete HTML/JSON report and requires both performance and accessibility to reach 90. A score is a measured run result, not a guarantee for every device/network.
+
+## Media and factual boundaries
+IncidentIQ recording/screenshots show the actual local H2 demo with synthetic data and heuristic investigation. FrameForge uses its prepared coffee sample. No production employer material, live Azure deployment, or production impact metrics are represented.
+
+Employment title/dates: Java Full Stack Developer, TCS, May 2024–Present.
+Education: MCA 2021–2023; BCA 2017–2020.
+Credential catalogue links describe the exams; personal credential URLs and the AZ-900 exam date still require the owner's verified details.

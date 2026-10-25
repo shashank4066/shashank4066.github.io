@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00.000 --> 00:10.000
+IncidentIQ local demo. Synthetic data.
+Sign in as a demo responder.
+
+00:10.000 --> 00:16.000
+Inspect the incident dashboard.
+
+00:16.000 --> 00:28.000
+Declare a synthetic payment API timeout.
+Attach the initial log evidence.
+
+00:28.000 --> 00:35.000
+The incident record and timeline open.
+
+00:35.000 --> 00:43.000
+Acknowledge the incident and add a response note.
+
+00:43.000 --> 00:49.000
+Move the incident to Investigating.
+
+00:49.000 --> 01:05.000
+Generate and review advisory analysis.
+This demo uses the heuristic fallback, without a paid AI key.
+
+01:05.000 --> 01:13.000
+The responder resolves the synthetic incident.
+
+01:13.000 --> 01:23.000
+Return to the overview. Every transition remains human controlled.
